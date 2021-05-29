@@ -55,7 +55,7 @@ p{
 a{
   /*Req 4*/
   font-size: 16px;
-  color: #C12258;
+  color: #B92751;
   text-decoration-line: underline;
   text-decoration-style: wavy;
 }
@@ -138,7 +138,8 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
 }
 
