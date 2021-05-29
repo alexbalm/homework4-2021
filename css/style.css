@@ -52,13 +52,7 @@ p{
   padding-top: 15px;
 }
 
-a{
-  /*Req 4*/
-  font-size: 16px;
-  color: #B92751;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-}
+
 
 /*Req 5*/
 /*Add selector and rule here*/
@@ -66,11 +60,11 @@ a{
   outline-width: 3px;
   outline-style: dashed;
   outline-color: #417243;
-}
+} 
 
 
 /*Req 6a*/
-td{
+td, th {
   text-align: center;
   border-top: 2px #000000;
   padding: 10px;
@@ -79,26 +73,10 @@ td{
 }
 
 th {
-  border-left: 2px solid #000000;
-  border-top: 2px solid #000000;
   border-top: none;
 }
 
-/*Req 6b*/
-.colhead{
-  color: #FFFFFF;
-  min-width: 125px;
-  padding: 10px;
-  text-align: center;
-  justify-content: center;
-  background-color: #7e0820;
-  text-transform: uppercase;
-}
-/*Req 6c*/
-.rowhead{
-  border-width: 2px;
-  border-color: #000000;
-}
+
 
 /*Req 6d*/
 tr:nth-child(odd) {
@@ -111,7 +89,7 @@ tr:nth-child(even) {
 }
 
 /*Req 6f*/
-tr:hover td {
+tbody tr:hover {
   background-color: rgba(126,8,32,.25);
 }
 
@@ -122,6 +100,23 @@ table{
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*Req 6b*/
+.colhead{
+  color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  background-color: #7e0820;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+/*Req 6c*/
+.rowhead{
+  border-width: 2px;
+  border-color: #000000;
 }
 
 thead tr:first-child th:first-child{
@@ -143,3 +138,10 @@ footer{
   left: 0;
 }
 
+a{
+  /*Req 4*/
+  font-size: 16px;
+  color: #B92751;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
